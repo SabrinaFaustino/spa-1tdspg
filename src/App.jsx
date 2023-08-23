@@ -5,7 +5,7 @@ import Footer from "./components/Footer"
 
 export default function App() {
 
-  //ÁREA IMPERATIVA
+  //ÁREA DECLARATIVA
   let meuNome = "Sabrina";
 
   return (
