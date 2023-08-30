@@ -1,27 +1,25 @@
-import Header from "./components/Header"
-import Section from "./components/Section"
-import Footer from "./components/Footer"
-
+import Cabecalho from "./components/Header";
+import Conteudo from "./components/Section";
+import Rodape from "./components/Footer";
 
 export default function App() {
 
-  //ÁREA DECLARATIVA
+  //ÁREA DECLARATIVA 
   let meuNome = "Sabrina";
 
   return (
     <>
-      {/* Área Imperativa! */}
+      {/* ÁREA IMPERATIVA E APENAS DE RODAR, NÃO DECLARAR*/}
       <div className="container">
 
-        <Header nomeDoUsuario={meuNome}>
-          Hello World
-        </Header>
+        <Cabecalho nomeDoUsuario={meuNome}>
+          Hello World!
+        </Cabecalho>
+        <Conteudo/>
+        <Rodape/>
 
-        <Section/>
-        
-        <Footer/>
 
       </div>
-    </>
+      </>
   )
 }
