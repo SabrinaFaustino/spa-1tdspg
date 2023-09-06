@@ -28,16 +28,16 @@ export const listaProdutos = [
     {
         id: 1,
         nome: "Teclado",
-        preco: 150
+        preco: 250
     },
     {
         id: 2,
         nome: "Mouse",
-        preco: 120
+        preco: 95
     },
     {
         id: 3,
         nome: "Monitor",
-        preco: 950
+        preco: 1250
     }
 ]
