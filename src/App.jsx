@@ -1,17 +1,18 @@
-import "./App.css";
-import {Outlet} from "react-router-dom";
-import Cabecalho from "./components/Header"
-import Rodape from "./components/Footer"
+import { Outlet } from "react-router-dom";
+import Cabecalho from "./components/Cabecalho";
+import Rodape from "./components/Rodape";
+import style from "./App.module.css";
 
-function App() {
+export default function App() {
 
   return (
-    <>
-      <Cabecalho/>
-      <Outlet/> 
-      <Rodape/>
-    </>
+    
+    <div className={style.container}>
+        <Cabecalho/>
+        <Outlet/>
+        <Rodape/>
+    </div>
+    
   )
-}
-export default App
 
+}
