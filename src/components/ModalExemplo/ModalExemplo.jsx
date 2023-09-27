@@ -46,7 +46,7 @@ export default function ModalExemplo(props) {
   const handleSubmit = (e)=>{
     e.preventDefault();
     
-    fetch("http://localhost:5000/produtos",{
+    fetch("http://localhost:5174/produtos",{
       method:'POST',
       headers:{
         "Content-Type":"application/json",
@@ -55,12 +55,11 @@ export default function ModalExemplo(props) {
     })
     .then((response)=> {
         console.log("Status da requisição HTTP : " + response.status);
-        response.json();
+        return response.json();
       })
     .then((data)=> console.log(data))
     .catch(error => console.log(error));
-
-
+    props.setOpen(false)
 
   }
 
@@ -104,7 +103,7 @@ export default function ModalExemplo(props) {
               </div>
 
               <div>
-                <button onClick={()=> props.setOpen(false)}>CADASTRAR</button>
+                <button>CADASTRAR</button>
               </div>
             </fieldset>
           </form>
